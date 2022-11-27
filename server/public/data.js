@@ -28,3 +28,5 @@ var people = [
     githubUsername: 'christopher-black'
   },
 ];
+
+module.exports = people;

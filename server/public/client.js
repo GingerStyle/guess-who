@@ -1,5 +1,7 @@
 console.log('Here are all the available people:', people);
+
 $(onReady);
+
 let randomNum = randomNumber(0, 6);
 let personName = getPersonObject(randomNum);
 
@@ -10,9 +12,10 @@ function onReady(){
     render(personName);
 
     for (let person of people){
-        $('#body').append(`<div class="pictures">
-                        <img class="${person.name}" src="https://github.com/${person.githubUsername}.png?size=250" alt="Profile image of ${person.name}">
-                    </div>`
+        $('#body').append(`
+            <div class="pictures">
+                <img class="${person.name}" src="https://github.com/${person.githubUsername}.png?size=250" alt="Profile image of ${person.name}">
+            </div>`
         )
     }
 
